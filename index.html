@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Cookie's</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="formContainer" class="card" style="display: none;">
+        <form id="userForm">
+            <div class="form-group">
+                <input type="text" id="firstName" placeholder="Imię" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="lastName" placeholder="Nazwisko" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn-primary">Wyślij</button>
+        </form>
+    </div>
+    <div id="welcomeMessage" class="card" style="display: none;">
+        <h1 id="welcomeText"></h1>
+        <div class="button-group">
+            <button onclick="deleteCookies()" class="btn-danger">Usuń</button>
+            <button onclick="changeName()" class="btn-secondary">Zmień imię</button>
+        </div>
+    </div>
+</body>
+</html>
